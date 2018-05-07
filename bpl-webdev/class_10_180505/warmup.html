@@ -1,0 +1,62 @@
+<meta charset="utf-8"/>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	body{
+		background-color: red;
+	}
+	#box{
+    		background-color: red;
+    		width: 200px;
+    		height: 200px;
+    		margin: 10px;
+    	}
+	</style>
+</head>
+<body>
+	<div id='box'>
+		<p>Some paragraph</p>
+		<p>Some paragraph</p>
+	</div>
+	<button onclick='randColor()'>Click to choose fixed random background color</button>
+	<script type="text/javascript">
+		//
+		var color = ['green','blue','yellow','orange','purple','black','red'];
+		console.log(color[0])
+		var i = 0;
+		var len = color.length
+		console.log(len)
+		var out = '';
+		// alternate:
+		// for (i = 0; i <= 6; i++)
+		for (; i < len; i++){
+			// console.log(colors[i])
+			out += color[i] + '\n';
+		}
+		console.log(out)
+		document.body.style.backgroundColor = color[3]
+		//
+		function changeBackground(){
+			var colors = ['yellow', 'green', 'black', 'purple', 'blue', 'pink', 'orange'];
+			var randNo1 = Math.random() * colors.length;
+			var i = Math.round(randNo1);
+			document.body.style.backgroundColor = colors[i];
+			var randNo2 = Math.random() * colors.length;
+			var ii = Math.round(randNo2);
+			var boxDiv = document.getElementById('box');
+      		boxDiv.style.backgroundColor = colors[ii];
+		}
+	    changeBackground()
+	    setInterval(changeBackground,1000) // function and number of milliseconds ms
+	    //
+	    function randColor(){
+	    	var colors = ['yellow', 'green', 'black', 'purple', 'blue', 'pink', 'orange'];
+	    	var randNo1 = Math.random() * colors.length;
+			var i = Math.round(randNo1);
+			document.body.style.backgroundColor = colors[i];
+	    }
+	</script>
+</body>
+</html>

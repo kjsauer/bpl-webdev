@@ -1,0 +1,199 @@
+<meta charset="utf-8"/>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Homepage</title>
+  <style>
+  </style>
+</head>
+<body>
+	<button>DO NOT CLICK ME!!! ;--) Muhuahahahaha!</button>
+	<br>
+	<button onclick="console.log('You CLICKED the BUTTON!')" >Click Me Instead!!! 8--p</button>
+	<script>
+	//
+  	var cookies = 0;
+  	var coins = 25;
+  	console.log(cookies);
+  	console.log(coins);
+  	var donuts = -15;
+  	console.log(donuts);
+  	if (donuts!==cookies){
+  		console.log('Cookies does not equal donuts.')
+  	}
+  	//
+  	if (donuts===cookies - 15){
+  		console.log('Cookies = donuts')
+  	};
+  	//
+  	var myNum = 5;
+  	var anotherNum = 10;
+  	console.log(myNum === anotherNum);
+  	console.log(myNum !== anotherNum);
+  	//
+  	if (myNum < anotherNum){
+  		console.log('myNum is less than anotherNum.')
+  	}
+  	// function functionName(inputs){
+  	// 	//function body
+  	// 	return output;
+  	// }
+  	//
+  	// Add machine
+  	function addTwoNumbers(num1,num2){
+  		// return the result of a + b
+  		var total = num1 + num2;
+  		return total;
+  	}
+  	var x = 5;
+  	var y = 6;
+  	console.log('Result = \n' + addTwoNumbers(x,y));
+  	//
+  	// Subtract machine
+  	function subtractTwoNumbers(num1,num2){
+  		// return the result of a + b
+  		var total = num1 - num2;
+  		return total;
+  	}
+  	var	x = 10;
+  	var y = 6;
+  	console.log('Result = \n' + subtractTwoNumbers(x,y));
+  	//
+  	// Name is a function parameter
+  	function sayHello(name){
+  		var greeting = 'Hello ';
+  		var fullGreeting = greeting + name;
+  		return fullGreeting;
+  	}
+  	console.log('Result = \n' + sayHello('Your Name'));
+  	var output = sayHello('Your Name');
+  	console.log('Result = \n' + output + '!');
+  	//
+	// Write the functions described:
+	//
+	// 1. Write a function, sumNums, that takes in two numbers as input, num1 and num2, and returns their sum.
+	function sumNums(num1,num2){
+		var num1;
+		var num2;
+		total = num1 + num2;
+		return total;
+	}
+	x = 5;
+	y = 5;
+	console.log('Sum = ' + sumNums(x,y));
+	//
+	// 2. Write a function, multNums, that takes in two numbers as input, num1 and num2, and returns their product.
+	function multNums(num1,num2){
+		var num1;
+		var num2;
+		total = num1 * num2;
+		return total;
+	}
+	x = 5;
+	y = 5;
+	console.log('Product = ' + multNums(x,y));
+	//
+	// 3. Write a function, sumThree, that takes in three numbers as input, n1, n2 and n3, and returns their sum.
+	function sumThree(n1,n2,n3){
+		var n1;
+		var n2;
+		var n3;
+		tot = n1 + n2 + n3;
+		return tot;
+	}
+	x = 5;
+	y = 5;
+	z = 5;
+	console.log('Sum = ' + sumThree(x,y,z));
+	//
+	// 4. Write a function, largestNum, that takes in three numbers as input, b1, b2 and b3, and returns the largest one. If all numbers are the same, return -1.
+	function largestNum(b1,b2,b3){
+		var b1;
+		var b2;
+		var b3;
+		if ((b1 === b2) & (b2 === b3)){
+			return -1
+		} else{
+			max_num = Math.max(b1,b2,b3);
+		}
+		return max_num
+	}
+	x = 5;
+	y = 5;
+	z = 5;
+	console.log('Result = ' + largestNum(x,y,z));
+	//
+	// 5. Write a function, greetPerson, that takes in a person's name, firstName, and returns a greeting that includes the name.
+	function greetPerson(firstName){
+		var firstName;
+		return 'Hello ' + firstName;
+	}
+	x = 'Kenny';
+	console.log('Result = ' + greetPerson(x));
+	//
+	// 6. Write a function, numCookies, that takes in a number of cookies, c, and returns a statement telling us how many cookies we have.
+	function numCookies(c){
+		var c;
+		return 'You have ' + c + ' cookies.';
+	}
+	x = 5;
+	console.log('Result = ' + numCookies(x));
+	//
+	// 7. Write a function, isGreaterThan100, that takes in a number, myNumber, and returns true if the number is greater than 100 and false otherwise.
+	function isGreaterThan100(myNumber){
+		var myNumber;
+		if (myNumber > 100){
+			return true
+		} else{
+			return false
+		}
+	}
+	x = 5;
+	console.log('Result = ' + isGreaterThan100(x));
+	//
+	// 8. Write a function, equalStrings, that takes in two strings, s1 and s2, and returns true if the strings are the same, false if they are not.
+	function equalStrings(s1,s2){
+		var s1;
+		var s2;
+		if (s1 === s2){
+			return true
+		} else{
+			return false
+		}
+	}
+	x = 'String1';
+	y = 'String2';
+	console.log('Result = ' + equalStrings(x,y));
+	//
+	// 9. Write a function, isGreaterThan0, that takes in a number, myInteger, and checks if the number is greater than 0. If the input is not an integer, return the string "invalid input, please try again".
+	function isGreaterThan0(myInteger){
+		var myInteger;
+		if (Number.isInteger(myInteger) === false){
+			return 'invalid input, please try again'
+		}
+		else{
+			if (myInteger > 0){
+				return true
+			}
+			else{
+				return false
+			}
+		}
+	}
+	x = 'stuff';
+	console.log('Result = ' + isGreaterThan0(x));
+	//
+	// Bonus:
+	// 10. Write a function, isEven, that takes in a number, myNumber, and returns true if the number is even. Hint: look up the "modulo" % operator.
+	function isEven(myNumber){
+		if (myNumber % 2 === 0){
+			return true
+		} else{
+			return false
+		}
+	}
+	x = 400;
+	console.log('Result = ' + isEven(x));
+  </script>
+</body>
+</html>

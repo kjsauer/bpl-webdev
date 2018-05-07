@@ -1,0 +1,49 @@
+<meta charset="utf-8"/>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Homepage</title>
+    <style>
+    *{
+      background-color: lightblue;
+      background-position: center;
+    }
+    #messageArea{
+      background-color: yellow;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+      <input id = "guessInputBox" autocomplete="off"></input>
+      <button onclick = "runGame()">Check value bw 1 & 10!</button>
+      <div id = "messageArea"></div>
+    <script>
+      // work on the following as homework:
+      // CSS Styling
+      // .innerHTML
+      // http://alexrivadeneira.github.io/guess.html
+      // make random value between 0 and 10 and save to variable
+      function randVal(){
+        var rand_num;
+        rand_num = Math.round(Math.random()*10);
+        return rand_num;
+      }
+      var random_num = randVal()
+      console.log('check random: ', random_num)
+      // check value
+      function runGame(){
+        var guess_Val = document.getElementById("guessInputBox");
+        if (guess_Val.value == random_num){
+          var textArea = document.getElementById("messageArea");
+          textArea.innerText = 'You got it! Please refresh page to start again.'
+        } else{
+          var textArea = document.getElementById("messageArea");
+          textArea.innerText = 'Try again!'
+        }
+      }
+    </script>
+  </body>
+</html>

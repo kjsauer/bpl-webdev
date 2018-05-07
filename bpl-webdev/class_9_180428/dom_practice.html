@@ -1,0 +1,75 @@
+<meta charset="utf-8"/>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Homepage</title>
+    <style>
+    	body{
+    		font-family: sans-serif;
+    	}
+    	#redbox{
+    		background-color: red;
+    		width: 200px;
+    		height: 200px;
+    		margin: 10px;
+    	}
+    	#greenbox{
+    		background-color: green;
+    		width: 400px;
+    		height: 400px;
+    		margin: 10px;
+    	}
+    	#yellowbox{
+    		background-color: yellow;
+    		width: 350px;
+    		height: 350px;
+    		margin: 10px;
+    		color: black;
+    	}
+    </style>
+  </head>
+  <body>
+    <input id = "myInput" autocomplete="off"></input>
+    <button id='btn' onclick='msg2console()'>My Button</button>
+  	<div id="redbox">
+  		<p>Some paragraph Some paragraph Some paragraph Some paragraph Some paragraph</p>
+  		<p>Some paragraph Some paragraph Some paragraph Some paragraph Some paragraph</p>    		
+  	</div>
+    <h2></h2>
+  	<div id="greenbox">
+  	 	<h4>My shopping list</h4>
+  		<ul> 
+  			<li>Oranges</li>  		
+  			<li>Milk</li>  		
+  			<li>Pasta</li>  
+  		<ul>		
+  	</div>
+  	<div id="yellowbox">
+  		<p>Some paragraph Some paragraph <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Link to GitHub </a>Some paragraph Some paragraph Some paragraph Some paragraph</p>
+  	</div>
+    <button id='btn' onclick="alert('some string')">My Button</button>
+    <script>
+      //
+      var redDiv = document.getElementById('redbox');
+      redDiv.style.backgroundColor = 'purple';
+      redDiv.innerHTML += '<h2>My New Header</h2>';
+      redDiv.innerHTML += '<p>asdf asdf asdf asdf asdf</p>';
+      //
+      var yellowDiv = document.getElementById('yellowbox');
+      yellowDiv.style.backgroundColor = 'orange';
+      yellowDiv.innerHTML += '<h2>My New Header</h2>';
+      yellowDiv.innerHTML += '<p>asdf asdf asdf asdf asdf</p>';
+      //
+      var greenDiv = document.getElementById('greenbox');
+      greenDiv.style.backgroundColor = 'blue';
+      greenDiv.innerHTML += '<h2>My New Header</h2>';
+      greenDiv.innerHTML += '<p>asdf asdf asdf asdf asdf</p>';
+      //
+      function msg2console(){
+        //log message to console
+        var myInput = document.getElementById('myInput');
+        console.log(myInput.value);
+      }
+    </script>
+  </body>
+</html>

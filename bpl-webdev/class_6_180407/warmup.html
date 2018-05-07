@@ -1,0 +1,67 @@
+<meta charset="utf-8"/>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Homepage</title>
+    <style>
+    /* show that there is an otherwise hidden div on the page */
+    #messageArea{
+      background-color: yellow;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <input id = "myInputBox"></input>
+    <!--the following buttons with onclick are called an event handler-->
+    <!--because some event happens when you click them-->
+    <button onclick = "console.log('Something')">Click me too!</button>
+    <button onclick = "displayInput()">$$$ ClIcK mE!!! $$$ InStAnT eArNiNgS!!! $$$</button>
+    <div id = "messageArea"></div>
+    <div id="yoyo">
+      <h4>Welcome</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    </div>
+    <script>
+      // function to display text box input in the body of the site
+      function displayInput(){
+        // get text from input box
+        var inputText = document.getElementById("myInputBox");
+        var message = inputText.value
+        // alternatively: console.log(inputText.value);
+        // put the text into the messageArea
+        var textArea = document.getElementById("messageArea");
+        textArea.innerText = inputText.value;
+      }
+      var yoyoDiv = document.getElementById(yoyo);
+      console.log(yoyo);
+      // check if value is >= 25
+      function checkValue(num1){
+        var num1;
+        if (num1 >= 25){
+          return true;
+        } else{
+          return false;
+        }
+      }
+      x = 10;
+      console.log("Result = " + checkValue(x));
+      // make random value between 0 and 10
+      function randVal(){
+        var rand_num;
+        rand_num = Math.random();
+        return rand_num;
+      }
+      console.log("Result = " + randVal());
+      console.log("Result = " + Math.round(Math.random()*10));
+    </script>
+  </body>
+</html>

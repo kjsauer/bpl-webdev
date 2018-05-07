@@ -1,0 +1,103 @@
+<meta charset="utf-8"/>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Homepage</title>
+    <style>
+    #greenBox{
+      width: 50px;
+      height: 50px;
+      background-color: green;
+    }
+    #greenBox:hover{
+      background-color: black;
+    }
+    #blueBox{
+      width: 150px;
+      height: 100px;
+      background-color: blue;
+    }
+    #yellowBox{
+      width: 250px;
+      height: 200px;
+      background-color: yellow; 
+    }
+    #yellowBox:hover{
+      background-color: red;
+      width: 100%;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="greenBox"></div>
+    <div id="blueBox"></div>
+    <div id="yellowBox"></div>
+    <!--this section is for JavaScript-->
+    <script>
+      // This is a comment in JavaScript
+      // The below is a JavaScript function
+      // Need to view the results in the browser console
+      console.log('Hello World!');
+      console.log(100+200);
+      var x;
+      x = 42;
+      console.log(x);
+      console.log(typeof(x));
+      x = 'Berkeley';
+      console.log(x);
+      console.log(typeof(x));
+      var x = true;
+      console.log(x);
+      console.log(typeof(x));
+      y = 30 > 10;
+      console.log(y)
+      console.log(typeof(y));
+      z = x && y;
+      console.log(z);
+      console.log(typeof(z));
+      x = 200;
+      y = 100;
+      if(x>y){
+        console.log('x is greater than y');
+      } else if(y>x){
+        console.log('y is greater than x');
+      } else{
+        console.log('x is equal to y');
+      }
+      var skyIsBlue = true; // toggle between true and false
+      if(skyIsBlue){
+        console.log('The sky is blue.');
+      } else{
+        console.log('The sky is not blue.');
+      }
+      var x = 100;
+      if(x<100){
+        console.log('x is less than 100');
+      } else if(x>100){
+        console.log('x is greater than 100');
+      } else if(x==100){
+        console.log('x equals 100')
+      } else{
+        console.log('error');
+      }
+      var isSunny = true;
+      console.log(isSunny == true);
+      console.log(isSunny === true); // need to look this up
+      if(isSunny === true){
+        console.log('It is sunny');
+      }
+      var isSunny1 = 1;
+      var isSunny2 = '1';
+      if(isSunny1 == isSunny2){ // double equals does not look at type of value
+        console.log("'Double equals' does not look at type of value");
+      } else{
+        console.log("'Double equals' does look at type of value");
+      }
+      if(isSunny1 === isSunny2){ // triple equals looks at type of value
+        console.log("'Triple equals' does not look at type of value");
+      } else{
+        console.log("'Triple equals' does look at type of value");
+      }
+    </script>
+  </body>
+</html>

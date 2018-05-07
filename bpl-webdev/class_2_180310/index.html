@@ -1,0 +1,123 @@
+<meta charset="utf-8"/>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is the title</title>
+    <style>
+      p{
+        color: red;
+        font-size: 14px;
+        background-color: green;
+      }
+      /* this is a class */
+      .bluePara{
+        background-color: blue;
+        color: white;
+        font-size: 20px;
+      }
+      .blueBox1{
+        background-color: green;
+        width: 300px;
+        height: 50px;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+      }
+      .blueBox2{
+        background-color: yellow;
+        width: 300px;
+        height: 50px;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+      }
+      .blueBox3{
+        background-color: red;
+        width: 300px;
+        height: 50px;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+      }
+      .bird{
+        width: 100%;
+        height: 120px;
+        background-image: url('img_01.jpg');
+        /* option to stop repeat: background-repeat: no-repeat; */
+      }
+      .blah{
+        width: 300px;
+        border: 25px solid green;
+        padding: 25px;
+        margin: 25px;
+      }
+      .navigation{
+        display: inline-block;
+        border: 3px solid black;
+        padding: 5px;
+        margin: 10px;
+      }
+      /* this is an id */
+      #orangeBox{
+        background-color: orange;
+        font-size: 20px;
+        color: white;
+        width: 100%;
+        height: 200px;
+        border-radius: 50px;
+        border-style: dotted;
+        border-color: black;
+        border-width: 5px;
+      }
+      /* pseudo-selector; change when you hover */
+      #orangeBox:hover{
+        background-color: purple;
+      }
+      h2{
+        font-family: sans-serif;
+        color: green;
+      }
+      h3{
+        font-family: sans-serif;
+      }
+      img{
+        border-radius: 100%;
+        border: 3px solid black;
+        transform: rotate(270deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>This is an h2 header.</h2>
+    <h3>This is an h3 header.</h3>
+      <p>Random paragraph 1</p>
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ul>
+      <ul>
+        <li class="navigation"><a href="list_item_1.html">List item 1</a></li>
+        <li class="navigation"><a href="list_item_2.html">List item 2</a></li>
+        <li class="navigation"><a href="list_item_3.html">List item 3</a></li>
+      </ul>
+      <p>Random paragraph 2</p>
+      <div class="blueBox1"></div><!--div does not have properties until you give it some-->
+      <div class="blueBox2"></div>
+      <div class="blueBox3"></div>
+      <br>
+      <div class="bird"></div>
+      <div class="blah"></div>
+      <div id="orangeBox"></div>
+      <p class="bluePara">Random paragraph 3 with bluePara class</p>
+    <a href="home.html">Home</a>
+    <a href="blog.html" target="_blank">Blog</a>
+    <a href="pictures.html">Pictures</a>
+    <a href="links.html">Links</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img src="img_01.jpg" alt="kitten picture"></img>
+  </body>
+</html>

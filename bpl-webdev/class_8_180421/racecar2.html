@@ -1,0 +1,80 @@
+<meta charset="utf-8"/>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Homepage</title>
+    <style>
+    #car{
+      position: absolute;
+      top: 550px;
+      left: 250px;
+    }
+    #carImage{
+    	width: 100px;
+    	height: 100px;
+    }
+    #map{
+      position: relative;
+      width: 750px;
+      height: 750px;
+    }
+    </style>
+  </head>
+  <body onkeypress = 'moveCar()'>
+    <div id = 'map'>
+    	<img src = 'Sky-Birds-are-Flying-Powerpoint-Templates.jpg'>
+      <div id = 'car'>
+      	<img id = 'carImage' src='red-balloon-transparent-background.png'>
+      </div>
+    </div>
+    <script>
+      //
+      function getCurrentPos(){
+        var carDiv = document.getElementById('car');
+        var currentPos = window.getComputedStyle(carDiv).left;
+        return currentPos;
+      }
+      console.log(getCurrentPos());
+      //
+      function getSplitPos(position){
+        var splitPos = position.split('px');
+        return splitPos;
+      }
+      console.log(getSplitPos(getCurrentPos()));
+      //
+      function keepInRange(updatedPos, range){
+        // Given an updated position
+        // in one direction, make sure
+        // position does not go outside given range
+        // updated position should revert
+        // back to zero once hits the max range
+        var modulusPos = updatedPos % range;
+        return modulusPos;
+      }
+      console.log(keepInRange(300,400),'300');
+      console.log(keepInRange(450,400),'50');
+      console.log(keepInRange(400,400),'0');
+      console.log(keepInRange(10,400),'10');
+      //
+      function moveCar(){
+        console.log('so far so good');
+        var carDiv = document.getElementById('car');
+        var mapDiv = document.getElementById('map');
+        console.log(mapDiv.offsetWidth);
+        var currentPos = getCurrentPos();
+        var splitPos = getSplitPos(currentPos);
+        var numPos = splitPos[0];
+        var numPos = parseInt(numPos); // convert to integer
+        var moveBy = 50;
+        var newNumPos = numPos + moveBy;
+        var modulusPos = keepInRange(newNumPos, mapDiv.offsetWidth); // ideally do not hard code 400; reference map width above
+        if (modulusPos == 0){
+        	modulusPos = modulusPos + 250; // always return to 250px left at minimum
+        }
+        var newTextPos = modulusPos + 'px';
+        carDiv.style.left = newTextPos;
+        console.log(newTextPos);
+      }
+    </script>
+  </body>
+</html>

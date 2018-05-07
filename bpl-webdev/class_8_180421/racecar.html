@@ -1,0 +1,59 @@
+<meta charset="utf-8"/>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Homepage</title>
+    <style>
+    	body{
+    		font-family: sans-serif;
+    	}
+      #container{
+        position: relative;
+        width: 800px;
+        height: 1000px;
+      }
+    	#redbox{
+    		background-color: red;
+    		width: 50px;
+    		height: 50px;
+        position: absolute;
+        left: 100px;
+        top: 70px;
+    	}
+    	#greenbox{
+    		background-color: green;
+    		width: 120px;
+    		height: 120px;
+        position: absolute;
+        left: 300px;
+        top: 400px;          
+    	}
+    	#yellowbox{
+    		background-color: yellow;
+    		width: 70px;
+    		height: 80px;
+        border-radius: 100%;
+    		color: black;
+        position: absolute;
+        left: 200px;
+        top: 50px;          
+    	}
+    </style>
+  </head>
+  <body>
+    <div id="container">
+  	<div id="redbox">    		
+  	</div>
+  	<div id="greenbox">
+  	</div>
+  	<div id="yellowbox">
+    </div>
+    <script>
+      var yellowbox_var = document.getElementById('yellowbox');
+      console.log(yellowbox_var);
+      console.log(window.getComputedStyle(yellowbox_var).left);
+      console.log(window.getComputedStyle(yellowbox_var).top);
+      yellowbox_var.style.left = '60px'
+    </script>
+  </body>
+</html>

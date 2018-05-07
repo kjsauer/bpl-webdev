@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyTitle</title>
+</head>
+<body>
+	<p id="id1">aaa</p>
+	<h1 id="id2">Velcome to my Vebsite!</h1>
+	<p id="id3">bbb</p>
+	<ul>
+		<li id="id4">ccc</li>
+		<li id="id5">ddd</li>
+	</ul>
+	<button onclick="console.log('Huah!')">Click it NOW!</button>
+	<script type="text/javascript">
+		//
+		var firstID = document.getElementById('id1');
+		console.log(firstID);
+		var secondID = document.getElementById('id2');
+		console.log(secondID);
+		var thirdID = document.getElementById('id3');
+		console.log(thirdID);
+		var fourthID = document.getElementById('id4');
+		console.log(fourthID);
+		var fifthID = document.getElementById('id5');
+		console.log(fifthID);
+		// each cookie costs 5 coins
+	  	function numCookies(numCoins){
+	  		// return the result
+	  		var numCookies = Math.floor(numCoins/5);
+	  		return numCookies;
+	  	}
+	  	// option to prompt user:
+	  	// var numCoins1 = prompt();
+	  	// option to hard code:
+	  	var numCoins1 = 33;
+	  	console.log('Result = \n' + numCookies(numCoins1));
+	  	// name is a function parameter
+	  	function sayHello(greeting, name){
+	  		var fullGreeting = greeting + name;
+	  		return fullGreeting;
+	  	}
+	  	console.log('Result = \n' + sayHello('Saludo ','Your Name!'));
+	  	var output = sayHello('Saludo ','Your Name!');
+	  	console.log('Result = \n' + output + '!');
+	  	console.log(sayHello('Yo ','Your Name'));
+	  	console.log(sayHello('Sup ','Your Name'));
+	  	//
+	  	function sayHello2(){
+	  		return 'Hello Zer!';
+	  	}
+	  	console.log(sayHello2());
+	  	//
+	  	function sayHello3(){
+	  		console.log('Hello Zer!!');
+	  	}
+	  	sayHello3();
+	</script>
+</body>
+</html>

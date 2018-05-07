@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>asdfasdf</title>
+  <style type="text/css">
+  p{
+    color: black;
+    font-size: 50px;
+    background-color: white;
+  }
+  </style>
+</head>
+<body>
+  <p id="demo"></p>
+  <button onclick="changeBackground()">Change Background</button>
+  <script type="text/javascript">
+    //
+    var animals = ['cat','dog','mouse','monster'];
+    var i = 0;
+    var len = animals.length;
+    var text = '';
+    for (; i < len; i++){
+        text += animals[i] + "<br>";
+    }
+    document.getElementById('demo').innerHTML = text;
+    console.log(text)
+    //
+    function changeBackground(){
+      var colors = ['yellow', 'green', 'black', 'purple', 'red', 'pink'];
+      var i = Math.round(Math.random() * 5)
+      document.body.style.backgroundColor = colors[i];
+    }
+    changeBackground()
+    //
+    setInterval(changeBackground,500)
+  </script>
+</body>
+</html>

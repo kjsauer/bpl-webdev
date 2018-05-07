@@ -1,0 +1,24 @@
+<meta charset="utf-8"/>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		//
+		function keepInRange(updatedPos, range){
+			//given an updated position
+			//in one direction, make sure
+			//position does not go outside given range
+			//updated position should revert
+			//back to zero once hits the max range
+			return updatedPos % range;
+		}
+		console.log(keepInRange(300,400),'300');
+		console.log(keepInRange(450,400),'50');
+		console.log(keepInRange(400,400),'0');
+		console.log(keepInRange(10,400),'10');
+	</script>
+</body>
+</html>
