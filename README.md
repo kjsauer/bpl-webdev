@@ -1,2 +1,2 @@
 # bpl-webdev
-Web dev class taught by Alex Rivadeneira at the Berkeley Public Library (BPL)
+Web dev class taught by Alex Rivadeneira at Berkeley Public Library BPL
