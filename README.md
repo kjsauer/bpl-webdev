@@ -1,2 +1,2 @@
 # bpl-webdev
-Web dev class taught by Alex Rivadeneira (alexrivadeneira on GitHub) at Berkeley Public Library (BPL). You can open the .html files in your web browser. Or, you can open them in Sublime Text editor, right click anywhere in the file, and select "Open in Browser". The latter is my preferred method.
+Web software development class taught by Alex Rivadeneira (alexrivadeneira on GitHub) at Berkeley Public Library (BPL). You can open the .html files in your web browser. Or, you can open them in Sublime Text editor, right click anywhere in the file, and select "Open in Browser". The latter is my preferred method.
