@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>asdfasdf</title>
+  <title>asdf1asdf1</title>
   <style type="text/css">
   p{
     color: black;
@@ -16,7 +16,7 @@
   <button onclick="changeBackground()">Change Background</button>
   <script type="text/javascript">
     //
-    var animals = ['cat','dog','mouse','monster'];
+    var animals = ['cat','dog','mouse','MONSTER!'];
     var i = 0;
     var len = animals.length;
     var text = '';
@@ -27,8 +27,8 @@
     console.log(text)
     //
     function changeBackground(){
-      var colors = ['yellow', 'green', 'black', 'purple', 'red', 'pink'];
-      var i = Math.round(Math.random() * 5)
+      var colors = ['yellow','green','black','purple','red','pink'];
+      var i = Math.round(Math.random()*5)
       document.body.style.backgroundColor = colors[i];
     }
     changeBackground()
